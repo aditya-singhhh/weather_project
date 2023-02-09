@@ -13,6 +13,7 @@ const getweather= (city)=>{
 	
 	console.log(response)
 	 city_name.innerHTML = response.location.name
+	 comma.innerHTML = ","
 	 region.innerHTML = response.location.region
 	 temp.innerHTML = response.current.temp_c
 	 temp_block.innerHTML = response.current.temp_c
