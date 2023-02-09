@@ -12,6 +12,7 @@ const getweather= (city)=>{
 	.then((response) => {
 	
 	console.log(response)
+	 weather_txt.innerHTML = "Weather for"
 	 city_name.innerHTML = response.location.name
 	 comma.innerHTML = ","
 	 region.innerHTML = response.location.region
@@ -39,4 +40,4 @@ submit.addEventListener("click", (e)=>{
 	getweather(city_input.value)
 })
 
-getweather("India")
+getweather("Bangalore")
